@@ -16,3 +16,96 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+html{
+  height:100%;
+}
+body{
+  min-height:100%;
+}
+// 导航栏
+.head {
+  position:fixed;
+  background-color: rgba(66,66,66 ,1);
+  height:60px;
+  width:100%;
+  display:table;
+  box-sizing:content-box;
+  z-index:1;
+  .head-part-one{
+    display:table-cell;
+    width:50%;
+    text-align: center;
+    img{
+      height:60px;
+      margin-left: 10%;
+    }
+    li{
+      display:inline-block;
+      margin-left: 10%;
+    }
+  }
+  .head-part-two{
+    display:table-cell;
+    width:50%;
+    padding-left: 15%;
+    ul{
+      list-style: none;
+      li{
+        display:inline-block;
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
+
+// 轮播图
+
+.carousel-frame{
+  padding-top: 60px;
+  height:100%;
+  img{
+    height:100%;
+    width:100%;
+  }
+}
+
+.carousel-description{
+  position:absolute;
+  bottom:30%;
+}
+
+// 轮播图下面部分
+.under-carousel{
+  width:100%;
+  margin-top:50px;
+  margin-bottom:50px;
+  text-align: center;
+}
+.under-carousel-info{
+  width:50%;
+  display:block;
+  margin:auto !important;
+}
+
+// 图文介绍
+
+.project-example{
+  display:table;
+  width:100%;
+  .part-one{
+    display:table-cell;
+    width:55%;
+    background-color: red;
+    img{
+      width:100%;
+    }
+  }
+  .part-two{
+    display:table-cell;
+    width:45%;
+    background-color: green;
+  }
+}
