@@ -93,19 +93,90 @@ body{
 // 图文介绍
 
 .project-example{
-  display:table;
   width:100%;
+  clear:left;
+  overflow:auto;
+  background-image: url(https://ws1.sinaimg.cn/large/006tNc79ly1fhvx58e8duj315p0iv0th.jpg);
   .part-one{
-    display:table-cell;
+    float:left;
     width:55%;
-    background-color: red;
+    img{
+      width:100%;
+      vertical-align: bottom;
+    }
+  }
+  .part-two{
+    float:right;
+    overflow:auto;
+    color:white;
+    padding:20px 20px 30px;
+    width:45%;
+  }
+  .part-three{
+    float:left;
+    padding:20px 30px;
+    color:white;
+    width:45%;
+  }
+  .part-four{
+    float:right;
+    width:55%;
     img{
       width:100%;
     }
   }
-  .part-two{
-    display:table-cell;
-    width:45%;
-    background-color: green;
+}
+
+// 表达愿景
+
+.your-dream{
+  width:100%;
+  height:300px;
+  padding-top:50px;
+
+  background-image: url(https://ws2.sinaimg.cn/large/006tNc79ly1fhw4wlq5t5j315o09qq3m.jpg);
+  .your-dream-word{
+    width:80%;
+    height:220px;
+    margin:auto !important;
+    text-align: center;
+    border-top: 1px solid grey;
+  }
+}
+.your-dream-picture{
+  width: 100%;
+  height:250px;
+  padding-top: 90px;
+  margin-bottom:-40px;
+  background-image: url(https://ws2.sinaimg.cn/large/006tNc79ly1fhw5ugwfvoj315o0axmzy.jpg);
+  h1{
+    text-align: center;
+    color: white;
+  }
+}
+
+.business-description{
+  width:80%;
+  height:400px;
+  background-color: white;
+  margin:0 auto ;
+  img{
+    height:360px;
+    width:100%;
+  }
+  .business-picture{
+    width:28%;
+    margin-left: 4%;
+    height:360px;
+    margin-top: 20px;
+    float:left;
+  }
+  .business-picture:last-of-type {
+    width:28%;
+    margin-right: 4%;
+    margin-left:4%;
+    height:360px;
+    margin-top: 20px;
+    float:left;
   }
 }
