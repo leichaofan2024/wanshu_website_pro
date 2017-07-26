@@ -16,7 +16,7 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
-
+ @import "font-awesome";
 
 html{
   height:100%;
@@ -205,19 +205,133 @@ body{
   }
   .support-part{
 
-    height:270px;
+    height:250px;
     width:60%;
     margin:0 auto;
+    color:white;
   }
   .support-part-icon{
-    width:40%;
+    width:30%;
     height:140px;
     margin:0 auto;
+    color:white;
     .support-part-span{
       height:140px;
       width:33.333%;
-      display:inline-block;
+      float:left;
 
+      i{
+        font-size: 90px;
+      }
+      strong{
+        display:block;
+        margin-top: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// 页脚之上
+
+.footer-top{
+  width:100%;
+  height:250px;
+  background-color: rgb(140,153,192);
+  padding-left: 10%;
+  padding-top: 45px;
+  ul{
+    list-style:none;
+    li{
+      height:30px;
+      &:hover{
+        color:blue;
+      }
+    }
+    li:first-of-type{
+      height:30px;
+      font-size: 18px;
+      font-weight: 800;
+      &:hover{
+        color:black;
+      }
+    }
+  }
+  .offer{
+    width:20%;
+    height:160px;
+    float:left;
+    border-right:1px solid white;
+    text-align: center;
+  }
+  .industries{
+    width:20%;
+    height:160px;
+    float:left;
+    border-right:1px solid white;
+    text-align: center;
+  }
+  .support{
+    width:20%;
+    height:160px;
+    float:left;
+    border-right:1px solid white;
+    text-align: center;
+  }
+  .company{
+    width:20%;
+    height:160px;
+    float:left;
+    border-right:1px solid white;
+    text-align: center;
+  }
+}
+
+
+.footer-mid{
+  width:100%;
+  height:100px;
+  background-color: rgb(77,88,117);
+  .footer-mid-one{
+    width:50%;
+    float:left;
+    height:100px;
+    text-align: center;
+    button:first-of-type{
+      height: 30px;
+      width: 150px;
+      margin-top:35px;
+      color:white;
+      background-color: rgb(77,88,117);
+      border-radius:15px;
+      border:2px solid blue;
+      &:hover{
+        background-color: blue;
+      }
+    }
+    button:last-of-type{
+      height: 30px;
+      width: 100px;
+      margin-top:35px;
+      margin-left: 30px;
+      color:white;
+      background-color: rgb(77,88,117);
+      border-radius:15px;
+      border:2px solid blue;
+      &:hover{
+        background-color: blue;
+      }
+    }
+  }
+  .footer-mid-two{
+    width:50%;
+    float:left;
+    height:100px;
+    text-align: center;
+    i{
+      font-size: 20px;
+      line-height:100px;
+      margin-right: 20px;
     }
   }
 }
