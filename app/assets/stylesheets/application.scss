@@ -214,6 +214,7 @@ footer {
   height:650px;
   overflow: hidden;
   z-index: 900;
+  margin-bottom:-20px;
   img{
     width:100%;
   }
@@ -239,22 +240,38 @@ footer {
 // 轮播图下面部分
 .under-carousel{
   width:100%;
-  margin-top:50px;
+  height:400px;
   margin-bottom:50px;
   text-align: center;
+  padding-top:100px;
+  background-image: url(https://ws3.sinaimg.cn/large/006tNc79ly1fhynde7aw9j315o09qq3m.jpg);
+  background-repeat:no-repeat;
+
 }
 .under-carousel-info{
-  width:50%;
+  width:70%;
   display:block;
   margin:auto !important;
-  h3{
-    color:rgb(77,88,117);
+  border-top: 1px solid rgba(66,66,66,1);
+  .short{
+    width:20%;
+    border-top: 3px solid rgba(44,118,233,1);
+    margin:0 auto;
   }
-  b{
-    color:rgb(119,130,163);
+
+  .title{
+    padding-top:40px;
+    color:#626469;
+    font-size: 25px;
+    font-weight: 100;
   }
+
   p{
-    color:rgb(119,130,163);
+    width:70%;
+    margin:20px auto;
+    line-height: 25px;
+    font-weight: 100;
+    color:#8a8a8a;
   }
 }
 
@@ -345,7 +362,10 @@ footer {
 
   background-image: url(https://ws2.sinaimg.cn/large/006tNc79ly1fhw4wlq5t5j315o09qq3m.jpg);
   p{
-    color:rgb(119,130,163);
+    margin-top:30px;
+    line-height: 25px;
+    font-weight: 100;
+    color:#8a8a8a;
   }
   .your-dream-word{
     width:80%;
@@ -353,6 +373,12 @@ footer {
     margin:auto !important;
     text-align: center;
     border-top: 1px solid grey;
+    .title{
+      margin-top:20px;
+      color:#626469;
+      font-size: 35px;
+      font-weight: 100;
+    }
     .line-short{
       width:30%;
       border-top:3px solid rgba(44,118,233,1);
