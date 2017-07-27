@@ -1,3 +1,102 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.about-head{
+  min-height:100%;
+  width:100%;
+  padding-top:60px;
+  background-image: url(https://ws2.sinaimg.cn/large/006tNc79ly1fhyh6jy2fnj312w0p0n4x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  h1{
+    margin-top:200px;
+    color:white;
+  }
+  p{
+    margin-top:20px;
+    color:white;
+  }
+
+}
+.about-frame{
+  margin-bottom: 100px;
+  margin-top:-10px;
+  .under-about-head{
+    background-image: url(https://ws3.sinaimg.cn/large/006tNc79ly1fhyibvjjl5j315o09qq3m.jpg);
+    background-size: cover;
+    height:200px;
+    width: 100%;
+    padding-top:60px;
+    text-align: center;
+    .long{
+      width:80%;
+      margin:0 auto ;
+      border-top:1px solid rgba(17,30,49 ,1);
+      .short{
+        width:30%;
+        margin:-1px auto 0;
+        border-top:3px solid rgba(44,118,233,1);
+      }
+    }
+    .about-title{
+      font-size: 25px;
+      width:100%;
+
+    }
+    .about-content{
+      width:50%;
+      margin:0 auto;
+    }
+  }
+  .about-company{
+    margin-top: 80px;
+    width:100%;
+    overflow: auto;
+    .one{
+      width:55%;
+      float:left;
+      height:300px;
+      img{
+        width:100%;
+        height:300px;
+      }
+    }
+    .two{
+      width:45%;
+      float:left;
+      height:300px;
+      p{
+        width:70%;
+        margin:30px;
+        line-height: 25px;
+      }
+    }
+    .three{
+      width:45%;
+      margin-top: 50px;
+
+      float:left;
+      height:300px;
+      p{
+        width:70%;
+        margin:30px;
+        line-height: 25px;
+      }
+    }
+    .four{
+      width:55%;
+      margin-top: 50px;
+      float:left;
+      height:300px;
+      img{
+        width:100%;
+        height:300px;
+      }
+    }
+  }
+
+}

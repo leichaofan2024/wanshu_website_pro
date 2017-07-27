@@ -1,14 +1,59 @@
 <div class="head">
   <div class="head-part-one">
+    <%= link_to root_path do %>
     <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fhpbmr9tlgj30n306n40b.jpg" alt="">
-    <li><a href="">我们的主要产和服务</a></li>
+    <% end %>
+    <li>
+      我们的主要产和服务
+      <div class="dropdown-content">
+        <div class="part-one col-md-4 col-sm-4 col-xs-4">
+
+        </div>
+        <div class="part-two col-md-4 col-sm-4 col-xs-4">
+
+        </div>
+        <div class="part-three col-md-4 col-sm-4 col-xs-4">
+
+        </div>
+        <div class="part-four">
+
+          <span class="one">需要支持？</span>
+          <a href="#" class="five">获得支持</a>
+          <span class="four"> 服务</span>
+          <span class="three"> 培训计划 | </span>
+          <span class="two"> 支持计划 |</span>
+        </div>
+      </div>
+
+    </li>
   </div>
 
   <div class="head-part-two">
-    <ul>
-      <li><a href="#">行业 </a></li>
-      <li><a href="#">关于我们</a></li>
-      <li><a href="#">联系</a></li>
+    <ul class="ul-frame">
+      <li class="height industry-dropdown">
+        行业
+        <ul class="industry-dropdown-content">
+          <li><a>铁路培训系统</a></li>
+          <li><a>高铁接触网检测系统 </a></li>
+          <li><a>高铁远动培训</a></li>
+        </ul>
+      </li>
+      <li class="height industry-dropdown">
+        关于我们
+        <ul class="industry-dropdown-content">
+          <li><a href="/about">关于万数</a></li>
+          <li><a href="#">客户案例</a></li>
+        </ul>
+      </li>
+      <li class="height industry-dropdown">
+        联系
+        <ul class="industry-dropdown-content">
+          <li><a href="/about">联系我们</a></li>
+          <li><a href="#">联系销售部</a></li>
+          <li><a href="#">联系技术部门</a></li>
+          <li><a href="#">联系培训部</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>

@@ -1,14 +1,14 @@
 <!-- 轮播图 -->
 
 <div id= "myCarousel" class="carousel slide carousel-frame">
-  <ul class="carousel-indicators">
+  <ul class="carousel-indicators carousel-button">
     <li data-target="#myCarousel" data-slide-to= "0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"> </li>
     <li data-target = "#myCarousel" data-slide-to="2"> </li>
   </ul>
   <div class="carousel-inner">
     <div class="item active">
-      <img src="https://ws2.sinaimg.cn/large/006tKfTcly1fhupttrhnmj312w0p046x.jpg" alt="">
+      <img src="https://ws2.sinaimg.cn/large/006tKfTcly1fhupttrhnmj312w0p046x.jpg" alt="" >
       <div class="carousel-caption carousel-description">
         <h1>
           <span>易于构建，易于维护，易于拥有</span>
@@ -51,29 +51,32 @@
 </div>
 
 <div class="project-example">
-  <div class="part-one">
+
+  <div class="part-one  ">
     <img src="https://ws4.sinaimg.cn/large/006tNc79ly1fhv6eyumsqj30p00d60up.jpg" alt="" align="middle">
   </div>
-  <div class="part-two">
+  <div class="part-two ">
     <h1>一切皆有可能</h1>
     <p>数十年来，Wonderware 凭借在任何工业软件领域无可比拟的广泛安装基础和功能最为丰富的产品，始终推动着工业软件市场创新力的发展。
       希望我们共同携手，让工业和基础设施行业改头换面。</p>
-    <button type="button" name="button">探索潜在奇迹</button>
+    <a href="/">探索潜在奇迹</a>
   </div>
 </div>
-<div class="project-example">
-  <div class="part-three">
+<div class="project-example ">
+  <div class="part-three ">
     <h1>独出心裁不足为奇
 付诸应用才难能可贵
     </h1>
     <p>全球超过三分之一的公司信赖 Wonderware 软件，并将其用于工厂的运营。在每个能够想象到的行业中，
       我们的工业软件都是企业的核心。了解真正掌控一切的意义。</p>
-    <button type="button" name="button">体会成功</button>
+    <a href="/" >体会成功</a>
   </div>
   <div class="part-one">
     <img src="https://ws3.sinaimg.cn/large/006tNc79ly1fhv6ez0dnzj30p00b4jtt.jpg" alt="">
   </div>
 </div>
+</div>
+
 
 
 <div class="your-dream">
@@ -100,6 +103,9 @@
   </div>
   <div class="business-picture">
     <img src="https://ws3.sinaimg.cn/large/006tNc79ly1fhw6zmtb48j307i0fkjrj.jpg" alt="">
+  </div>
+  <div class="business-picture">
+    <img src="https://ws3.sinaimg.cn/large/006tKfTcly1fhyfu0q252j307i0fkjs3.jpg" alt="">
   </div>
 </div>
 
@@ -135,55 +141,11 @@
   </div>
 </div>
 
-<div class="footer-top">
-  <div class="offer">
-    <ul>
-      <li>我们的产品和服务</li>
-      <li>云计算</li>
-      <li>云存储</li>
-      <li>虚拟化</li>
-    </ul>
-  </div>
-  <div class="industries">
-    <ul>
-      <li>行业</li>
-      <li>铁路培训平台 </li>
-      <li>高铁接触网检测系统</li>
-      <li>高铁远动培训系统</li>
-    </ul>
-  </div>
 
-  <div class="support">
-    <ul>
-      <li>支持</li>
-      <li>联系技术支持部门</li>
-      <li>培训计划</li>
-    </ul>
-  </div>
-  <div class="company">
-    <ul>
-      <li>公司</li>
-      <li>关于万数</li>
-      <li>我们的团队</li>
-      <li>地理位置</li>
-    </ul>
-  </div>
-</div>
 
-<div class="footer-mid">
-  <div class="footer-mid-one">
-    <button>加入电子邮件列表</button>
-    <button>联系我们</button>
-  </div>
-  <div class="footer-mid-two">
-    <i class="fa fa-facebook"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa-youtube"></i>
-    <i class="fa fa-linkedin"></i>
-    <i class="fa fa-google-plus"></i>
-  </div>
-</div>
 
-<div class="footer-bot">
-
-</div>
+<script>
+  $('#myCarousel').carousel({
+     interval: 5000
+  })
+</script>
