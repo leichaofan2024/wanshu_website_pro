@@ -88,18 +88,36 @@ footer {
         z-index: 1000;
         .part-one{
           height:440px;
+          width:33.333%;
           float:left;
           background-color: yellow;
+          img{
+            width:100%;
+            height:440px;
+            margin:0 auto ;
+          }
         }
         .part-two{
           height:440px;
+          width:33.333%;
           float:left;
           background-color: red;
+          img{
+            width:100%;
+            height:440px;
+            margin:0 auto ;
+          }
         }
         .part-three{
           height:440px;
+          width:33.333%;
           float:left;
           background-color: blue;
+          img{
+            width:100%;
+            height:440px;
+            margin:0 auto ;
+          }
         }
         .part-four{
           clear:left;
