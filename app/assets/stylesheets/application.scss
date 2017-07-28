@@ -25,6 +25,20 @@ body{
   height:100%;
 }
 
+// 登录页面
+
+.log-in-frame{
+  width:60%;
+  min-height: 100%;
+  padding-top:60px;
+  padding-bottom: 70px;
+  margin: 0 auto -70px;
+  text-align: center;
+  h2{
+    margin-top:10%;
+  }
+}
+
 // 页脚
 footer {
   background-color: rgb(66,66,66);
@@ -177,6 +191,24 @@ footer {
         margin-right: 10%;
         line-height: 60px;
         margin-bottom: -8px;
+      }
+      .nav-login{
+        float:right;
+        line-height: 60px;
+        margin-right:20px;
+      }
+      .dropdown{
+        float:right;
+        line-height: 60px;
+        margin-right:20px;
+        display:inline-block;
+        .dropdown-content{
+        display:none;
+
+        }
+      }
+      .dropdown:hover .dropdown-content{
+        display:block;
       }
     }
   }

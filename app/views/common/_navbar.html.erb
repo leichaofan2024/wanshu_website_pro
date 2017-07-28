@@ -54,6 +54,19 @@
           <li><a href="#">联系培训部</a></li>
         </ul>
       </li>
+      <% if !current_user.present? %>
+        <li class="nav-login"><%= link_to(content_tag(:i, "登录", class: "fa fa-sign-in"),new_user_session_path)%> </li>
+      <% else %>
+        <li class="dropdown">
+          <a>你好！<%= current_user.email%></a>
+          <ul  class="dropdown-content">
+            <li><a href="#">后台</a></li>
+            <li class="divider"></li>
+            <li><%= link_to(content_tag(:i, "登出", class: "fa fa-sign-out"), destroy_user_session_path,method: :delete )%></li>
+          </ul>
+
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>
