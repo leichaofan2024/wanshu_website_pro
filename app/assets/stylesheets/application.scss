@@ -295,14 +295,14 @@ footer {
   }
   .part-two{
     float:left;
-    color:white;
     width: 45%;
     h1{
       margin-left: 30px;
       margin-top:10%;
+      color:#F0FAF7;
     }
     p{
-      color:rgb(255,254,255);
+      color:#8a8a8a;
       width:60%;
       margin-left:30px;
       margin-top:5%;
@@ -314,7 +314,7 @@ footer {
       margin-left: 30px;
       border:2px solid rgba(44,118,233,1);
       border-radius: 15px;
-      color:rgb(255,254,255);
+      color:#8a8a8a;
       text-decoration: none;
       &:hover{
         background-color: rgba(44,118,233,1);
@@ -325,15 +325,17 @@ footer {
   .part-three{
     float:left;
     padding:20px 30px;
-    color:white;
+
     width: 45%;
     h1{
       margin-left: 30%;
       margin-top:5%;
+      color:#F0FAF7;
     }
     p{
       margin-left:30%;
       margin-top:5%;
+      color:#8a8a8a;
       line-height: 25px;
       margin-bottom: 20px;
     }
@@ -342,7 +344,7 @@ footer {
       margin-left: 30%;
       border:2px solid rgba(44,118,233,1);
       border-radius: 15px;
-      color:rgb(255,254,255);
+      color:#8a8a8a;
       text-decoration: none;
       &:hover{
         background-color: rgba(44,118,233,1);
@@ -447,14 +449,24 @@ footer {
     height:250px;
     width:60%;
     margin:0 auto;
-    color:white;
+    color:#F0FAF7;
+    .title{
+      font-size: 25px;
+      line-height: 60px;
+      font-family:serif;
+      letter-spacing: 20px;
+    }
+    p{
+      line-height: 35px;
+      font-weight: 100;
+    }
 
   }
   .support-part-icon{
     width:80%;
     height:140px;
     margin:0 auto;
-    color:white;
+    color:#F0FAF7;
     .support-part-span{
       height:140px;
       width:20%;
