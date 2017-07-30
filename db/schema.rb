@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170728024916) do
+ActiveRecord::Schema.define(version: 20170728083322) do
+
+  create_table "products", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "structure"
+    t.string   "processor"
+    t.string   "chip"
+    t.string   "memory"
+    t.string   "disk"
+    t.string   "network_controller"
+    t.string   "expand_groove"
+    t.string   "video_card"
+    t.string   "exterior_port"
+    t.string   "power"
+    t.string   "temperature_evn"
+    t.string   "humidity_evn"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
