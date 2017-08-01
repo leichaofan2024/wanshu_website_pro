@@ -58,12 +58,11 @@
         <li class="nav-login"><%= link_to(content_tag(:i, "  登录", class: "fa fa-sign-in",style: "color:rgba(44,118,233,1);"),new_user_session_path)%> </li>
       <% else %>
         <li class="dropdown">
-          <a> <%= content_tag(:i, "  管理员", class: "fa fa-user-o",style: "color:rgba(44,118,233,1);") %></a>
+          <a > <%= content_tag(:i, "  管理员", class: "fa fa-user-o",style: "color:rgba(44,118,233,1);") %></a>
           <ul  class="dropdown-content">
-            <li><a href="#">后台</a></li>
+            <li><a href="/products">后台</a></li>
             <li><%= link_to(content_tag(:i, "登出", class: "fa fa-sign-out"), destroy_user_session_path,method: :delete )%></li>
           </ul>
-
         </li>
       <% end %>
     </ul>
