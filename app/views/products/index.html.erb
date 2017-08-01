@@ -1,0 +1,8 @@
+<div style="padding-top:70px;width:80%;margin:0 auto;">
+  <% @products.each do |p| %>
+    <%= p.title %> <br>
+    <div>
+      <%=  p.description.html_safe %>
+    </div>
+  <% end %>
+</div>
