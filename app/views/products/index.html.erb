@@ -1,8 +1,20 @@
+
 <div class="product-frame">
-  <% @products.each do |p| %>
-    <%= p.title %> <br>
-    <div>
-      <%=  p.description.html_safe %>
+  <% if current_user.present?%>
+    <div class="pull-right">
+      <%= link_to("新增产品", new_product_path,class: "btn btn-primary")%>
     </div>
   <% end %>
+  <div class="product-content">
+    <% @products.each do |p| %>
+      <div class="product-title"><%= p.title %> </div><br>
+      <div class="pull-right">
+        <%= link_to("删除", product_path(p),method: :delete, class: "btn btn-danger")%>
+      </div>
+      <div>
+        <%=  p.description.html_safe %>
+      </div>
+    <% end %>
+  </div>
+
 </div>

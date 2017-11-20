@@ -9,5 +9,11 @@
   margin:0 auto -70px;
   min-height: 100%;
   padding-bottom: 70px;
+  .product-content{
+    clear:both;
+    .product-title{
+      text-align: center;
+    }
+  }
 
 }
