@@ -1,10 +1,10 @@
 
 <div class="product-frame">
-  <% if current_user.present?%>
+
     <div class="pull-right">
       <%= link_to("新增产品", new_product_path,class: "btn btn-primary")%>
     </div>
-  <% end %>
+
   <div class="product-content">
     <% @products.each do |p| %>
       <div class="product-title"><%= p.title %> </div><br>
