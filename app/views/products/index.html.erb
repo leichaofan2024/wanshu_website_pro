@@ -1,20 +1,138 @@
 
 <div class="product-frame">
-
+  <% if current_user %>
     <div class="pull-right">
       <%= link_to("新增产品", new_product_path,class: "btn btn-primary")%>
     </div>
-
-  <div class="product-content">
+  <% end %>
+  <div class="product-content" id="accordion">
+    <% n=0%>
     <% @products.each do |p| %>
-      <div class="product-title"><%= p.title %> </div><br>
-      <div class="pull-right">
-        <%= link_to("删除", product_path(p),method: :delete, class: "btn btn-danger")%>
+    <% n=n+1%>
+    <div>
+      <div class="product-title">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= p.id%>">
+          <%= p.title %>
+        </a>
+        <% if current_user %>
+          <div class="pull-right">
+            <%= link_to("删除", product_path(p),method: :delete)%>
+          </div>
+        <% end %>
       </div>
-      <div>
-        <%=  p.description.html_safe %>
+
+
+      <div id="collapse<%= p.id%>" class="collapse">
+        <div>
+          <%=  p.description.html_safe %>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>系统结构</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.structure)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>处理器</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.processor)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>芯片组</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.chip)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>内存</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.memory)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>磁盘</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.disk)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>网络控制器</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.network_controller)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>扩展槽</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.expand_groove)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>显卡</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.video_card)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>外部接口</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.exterior_port )%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>电源</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.power)%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row">
+          <div class="product-parameter-column-one">
+            <h5>环境温度要求</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.temperature_evn )%></p>
+          </div>
+        </div>
+        <div class="product-parameter-row" style="margin-bottom:100px;">
+          <div class="product-parameter-column-one">
+            <h5>环境湿度要求</h5>
+          </div>
+          <div class="product-parameter-column-two">
+            <p><%= simple_format(p.humidity_evn )%></p>
+          </div>
+        </div>
       </div>
+    </div>
+
     <% end %>
+  </div>
+
+  <div class="product-statement">
+    <p>特别声明: </p>
+    <p>我们会尽全力为您提供准确、全面的信息，以上产品图片仅供参考。</p>
+    <p>信息中如有遗漏内容，请致电北京万数科技有限公司咨询。</p>
+    <p>以上内容如有变动，恕不另行通知。</p>
   </div>
 
 </div>

@@ -8,12 +8,33 @@
   width:80%;
   margin:0 auto -70px;
   min-height: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   .product-content{
     clear:both;
     .product-title{
       text-align: center;
     }
   }
+}
 
+.product-parameter-row{
+  width:100%;
+  display:table;
+  border-bottom: solid 1px #C9CAED;
+  .product-parameter-column-one{
+    width:30%;
+    display:table-cell;
+    padding-left: 20px;
+  }
+  .product-parameter-column-two{
+    width:70%;
+    display:table-cell;
+    color:#8a8a8a;
+  }
+}
+.product-blank{
+  height:50px;
+}
+.product-statement{
+  margin-top: 30px;
 }
