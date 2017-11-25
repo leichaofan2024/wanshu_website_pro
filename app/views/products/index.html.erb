@@ -16,7 +16,8 @@
         </a>
         <% if current_user %>
           <div class="pull-right">
-            <%= link_to("删除", product_path(p),method: :delete)%>
+            <%= link_to("", edit_product_path(p),class: "fa fa-edit" )%>
+            <%= link_to("", product_path(p),method: :delete,data: {confirm: "你确定要删除吗？"}, class: "fa fa-trash")%>
           </div>
         <% end %>
       </div>
